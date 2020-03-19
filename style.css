@@ -1,0 +1,74 @@
+.header{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+table{
+  min-height: 200px;
+}
+
+th{
+  cursor: pointer;
+}
+
+th i{
+  visibility: hidden;
+}
+
+tr{
+  max-height: 50px;
+  cursor: pointer;
+}
+
+.show{
+  visibility: visible !important;
+}
+
+.createTask, .auth, .editTask{
+  display: none;
+}
+
+.overlay {
+  background-color: rgba(0,0,0,.25);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__form{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.close {
+  background-color: rgb(204,204,204);
+  border-radius: 50%;
+  color: rgb(255,255,255);
+  font-family: 'Varela Round', sans-serif;
+  font-size: .8em;
+  padding: .2em .5em;
+  margin-right: -25px;
+}
+
+.close:hover {
+  background-color: #1bc5b3;
+  cursor: pointer;
+}
+
+#createTaskForm div span, .auth__error{
+  visibility: hidden;
+  color: red;
+}
+
